@@ -10,7 +10,7 @@ export default function QuestionList() {
             {
                 answers ?
                     Object.values(answers).map(answer => {
-                        return <Question answer={answer} />
+                        return <Question key={answer.id} answer={answer} />
                     }) : <p>No FAQs yet.</p>
             }
         </>
